@@ -8,7 +8,7 @@ const Profile = () => {
             <div className='flex flex-col md:flex-row justify-center space-x-0 md:space-x-8 space-y-8 md:space-y-0'>
                 <div className='bg-white text-black p-8 md:p-10 w-full md:w-[550px] rounded-2xl'>
                     <h1 className='font-rale text-xl md:text-3xl tracking-wider'>
-                        Hey! I'm Om Nandurkar, a dedicated and independent web designer and WordPress developer based in Pune, Maharashtra.
+                    As a passionate and dedicated MERN Stack Developer, I specialize in crafting responsive, user-friendly web applications using cutting-edge technologies. <br/> <br/> Dive into my portfolio to see how I can transform your ideas into reality.
                     </h1>
                 </div>
                 <div className='flex justify-center md:justify-start'>
@@ -22,7 +22,7 @@ const Profile = () => {
                 </div>
                 <div className='col-span-1 md:col-span-3 ps-2 md:ps-6'>
                     <h2 className=' text-xl md:text-2xl font-rale'>
-                        As a creative developer, I focus on both design and development — I work closely with my clients to ensure that every project meets their unique needs and exceeds their expectations. <br/><br/> My goal is to create outstanding digital experiences, improve every day, and have fun!
+                    I have hands-on experience in building websites from scratch, collaborating with UI/UX designers, and optimizing web applications for performance and accessibility. <br/> <br/>  Always eager to learn and improve, I stay at the forefront of web development.
                     </h2>
                 </div>
             </div>
