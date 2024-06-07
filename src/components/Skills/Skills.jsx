@@ -4,7 +4,6 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 import { Svg1 } from './Svgs';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
@@ -21,9 +20,11 @@ const Skills = () => {
             tl.from('.card-container', { x: 1000, duration: 1, opacity: 0, stagger: 0.5 });
         };
 
-        animateCards();
+        // Check if the device is not a mobile device
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            animateCards();
+        }
     });
-
 
     const Card = ({ title, iconUrl, iconComponent, description, features }) => {
         return (
@@ -63,18 +64,22 @@ const Skills = () => {
                     iconUrl="https://cdn-icons-png.flaticon.com/128/10285/10285722.png"
                     description="Web development encompasses more than just creating static visuals. It involves building dynamic and interactive websites and web applications that are functional, efficient, and user-friendly."
                     features={["Fast", "Interactive", "Mobile Friendly"]}
+
+                    data-aos="fade-right"
                 />
                 <Card
                     title="WEB DESIGN"
                     iconComponent={<Svg1 />}
                     description="Web design goes beyond static visuals. It's about interactions, animations, usability, consistency and so much more. I create user-focused designs for your website, ensuring a captivating online journey for your audience."
                     features={["Modern", "Attractive", "Responsive"]}
+                    data-aos="fade-right"
                 />
                 <Card
                     title="Backend Solutions"
                     iconUrl="https://cdn-icons-png.flaticon.com/128/2010/2010990.png"
                     description="Backend solutions encompass more than just server-side development. They involve creating robust, scalable, and efficient systems to power the functionality of websites and web applications."
                     features={["API", "Database", "Authentication"]}
+                    data-aos="fade-right"
                 />
             </div>
         </div>
