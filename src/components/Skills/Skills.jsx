@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
 import { Svg1 } from './Svgs';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Skills = () => {
-    useGSAP(() => {
-        const animateCards = () => {
+    useEffect(() => {
+        const mm = gsap.matchMedia();
+
+        mm.add("(min-width: 800px)", () => {
+            console.log('Desktop animation');
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: "#card-boxx",
@@ -18,13 +20,24 @@ const Skills = () => {
                 }
             });
             tl.from('.card-container', { x: 1000, duration: 1, opacity: 0, stagger: 0.5 });
-        };
+        });
 
-        // Check if the device is not a mobile device
-        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            animateCards();
-        }
-    });
+        mm.add("(max-width: 799px)", () => {
+            console.log('Mobile animation');
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: "#card-boxx",
+                    start: "top 80%",
+                    end: "bottom 80%",
+                    scrub: 0.5
+                }
+            });
+            tl.from('.card-container', { x: 200, duration: 1, opacity: 0, stagger: 0.5 });
+        });
+
+        // Cleanup ScrollTriggers on component unmount
+        return () => mm.revert();
+    }, []);
 
     const Card = ({ title, iconUrl, iconComponent, description, features }) => {
         return (
@@ -60,11 +73,10 @@ const Skills = () => {
             </div>
             <div id='card-boxx' className='col-span-1 md:col-span-3 px-6 space-y-10 relative'>
                 <Card
-                    title="WEB DEVLOPMENT"
+                    title="WEB DEVELOPMENT"
                     iconUrl="https://cdn-icons-png.flaticon.com/128/10285/10285722.png"
                     description="Web development encompasses more than just creating static visuals. It involves building dynamic and interactive websites and web applications that are functional, efficient, and user-friendly."
                     features={["Fast", "Interactive", "Mobile Friendly"]}
-
                     data-aos="fade-right"
                 />
                 <Card

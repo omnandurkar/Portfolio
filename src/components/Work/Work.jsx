@@ -50,19 +50,23 @@ import projectData from './projectData'; const Work = () => {
             });
         };
 
-        const mediaQuery = window.matchMedia('(min-width: 768px)');
+        // const mediaQuery = window.matchMedia('(min-width: 768px)');
 
-        if (mediaQuery.matches) {
+        // if (mediaQuery.matches) {
+        //     initAnimations();
+        // }
+
+        // mediaQuery.addListener((e) => {
+        //     if (e.matches) {
+        //         initAnimations();
+        //     } else {
+        //         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+        //     }
+        // });
+
+        if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             initAnimations();
         }
-
-        mediaQuery.addListener((e) => {
-            if (e.matches) {
-                initAnimations();
-            } else {
-                ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-            }
-        });
     });
 
 
@@ -75,7 +79,7 @@ import projectData from './projectData'; const Work = () => {
                     <div className='flex flex-col justify-between md:col-span-3 h-full p-10 text-black col-span-6'>
                         <div className='flex flex-col space-y-5'>
                             <h1 className='md:text-5xl text-4xl -tracking-wider leading-tight font-oswald'>
-                                {title} <br/> {title0}
+                                {title} <br /> {title0}
                             </h1>
                             <div className='flex space-x-3'>
                                 <h3 className='border text-xs rounded-full border-black px-2 md:px-4 py-[2px]'>
