@@ -72,7 +72,7 @@ import projectData from './projectData'; const Work = () => {
 
 
 
-    const ProjectCard = ({ id, imgSrc, title, title0, description }) => {
+    const ProjectCard = ({ id, imgSrc, title, title0, description, live }) => {
         return (
             <div id={id} className='h-screen p-4 md:p-9 space-y-12'>
                 <div className='grid grid-cols-6 h-full md:max-w-[1120px] bg-white rounded-2xl overflow-hidden mx-auto'>
@@ -95,9 +95,11 @@ import projectData from './projectData'; const Work = () => {
                         </div>
                         <div className='flex flex-col space-y-6'>
                             <p className='font-rale text-sm max-w-md'>{description}</p>
+                            <a href={live} target='_blank'>
                             <button className='border p-2 rounded-full w-fit px-4 hover:underline hover:underline-offset-2 hover:animate-wiggle animate-infinite hover:bg-black hover:text-white  border-black'>
                                 See Live Website -
                             </button>
+                            </a>
                         </div>
                     </div>
                     <div className='flex md:col-span-3 col-span-6 bg-[#1d1d1f] overflow-hidden  duration-300'>
