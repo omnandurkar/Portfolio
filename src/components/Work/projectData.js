@@ -1,8 +1,23 @@
+import img0 from "./Nutribites-mockup.png";
 import img2 from "./dustbin.png";
 import img1 from "./booking.png";
 import img3 from "./cleverbooks.png";
 
+
 const projectData = [
+
+    {
+        id: 'project0',
+        imgSrc: img0,
+        title: 'NUTRIBITES',
+        title0: 'Online Health Food Store',
+        description:
+            'Developed a modern online health food store using the MERN stack. The site includes a user-friendly design with animations created using AOS and Tailwind CSS. It features Google Sign-in, a contact page, review system, and admin panel for managing requests and reviews.',
+        live: 'https://nutribites.store/',
+
+    },
+
+
     {
         id: 'project1',
         imgSrc: img1,

@@ -2,15 +2,31 @@ import React from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import projectData from './projectData'; const Work = () => {
+import projectData from './projectData';
+
+const Work = () => {
     useGSAP(() => {
         gsap.registerPlugin(ScrollTrigger);
 
         const initAnimations = () => {
-            gsap.fromTo('#project1', {
+            gsap.fromTo('#project0', {
                 x: -800,
             }, {
                 x: 800,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: "#project0",
+                    start: "top top",
+                    pin: true,
+                    end: "+=267%",
+                    scrub: true
+                },
+            });
+
+            gsap.fromTo('#project1', {
+                x: 800,
+            }, {
+                x: -800,
                 duration: 1,
                 scrollTrigger: {
                     trigger: "#project1",
@@ -22,9 +38,9 @@ import projectData from './projectData'; const Work = () => {
             });
 
             gsap.fromTo('#project2', {
-                x: 800,
-            }, {
                 x: -800,
+            }, {
+                x: 800,
                 duration: 1,
                 scrollTrigger: {
                     trigger: "#project2",
@@ -36,9 +52,10 @@ import projectData from './projectData'; const Work = () => {
             });
 
             gsap.fromTo('#project3', {
-                x: -800,
+                x: 800,
             }, {
-                x: 1350,
+                
+                x: -1350,
                 duration: 1,
                 scrollTrigger: {
                     trigger: "#project3",
@@ -96,9 +113,9 @@ import projectData from './projectData'; const Work = () => {
                         <div className='flex flex-col space-y-6'>
                             <p className='font-rale text-sm max-w-md'>{description}</p>
                             <a href={live} target='_blank'>
-                            <button className='border p-2 rounded-full w-fit px-4 hover:underline hover:underline-offset-2 hover:animate-wiggle animate-infinite hover:bg-black hover:text-white  border-black'>
-                                See Live Website -
-                            </button>
+                                <button className='border p-2 rounded-full w-fit px-4 hover:underline hover:underline-offset-2 hover:animate-wiggle animate-infinite hover:bg-black hover:text-white  border-black'>
+                                    See Live Website -
+                                </button>
                             </a>
                         </div>
                     </div>

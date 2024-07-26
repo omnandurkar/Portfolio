@@ -26,11 +26,11 @@ class DeviceDetector extends React.Component {
         const { isMobile } = this.state;
         return (
             <div>
-                {isMobile ? (
+                {/* {isMobile ? (
                     <p>This site is only available for laptop devices. Please visit the mobile version <a href="your-mobile-site-url">here</a>.</p>
                 ) : (
                     <p>This site is available for laptop devices.</p>
-                )}
+                )} */}
             </div>
         );
     }
