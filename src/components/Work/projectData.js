@@ -12,7 +12,7 @@ const projectData = [
         title: 'NUTRIBITES',
         title0: 'Online Health Food Store',
         description:
-            'Developed a modern online health food store using the MERN stack. The site includes a user-friendly design with animations created using AOS and Tailwind CSS. It features Google Sign-in, a contact page, review system, and admin panel for managing requests and reviews.',
+            'Developed a modern online health food store using the MERN stack. The site includes a user-friendly design with animations created using AOS and Tailwind CSS. It features allowing user to Google Sign-in, Explore different products, Add to favourites, Add to cart, Apply Coupen, Place order, Track Order, Cancle Order, a contact page, review system, and admin panel for adding, editing, deleting products, coupen codes, Tracking order details, user logins, Contact Requests and many more',
         live: 'https://nutribites.store/',
 
     },

@@ -54,7 +54,7 @@ const Work = () => {
             gsap.fromTo('#project3', {
                 x: 800,
             }, {
-                
+
                 x: -1350,
                 duration: 1,
                 scrollTrigger: {
@@ -106,7 +106,7 @@ const Work = () => {
                                     Development
                                 </h3>
                                 <h3 className='border text-xs rounded-full border-black px-2 md:px-4 py-[2px]'>
-                                    WordPress
+                                    MERN
                                 </h3>
                             </div>
                         </div>
