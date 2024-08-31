@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './views/Home/Home.jsx'
+import AllProjects from './views/AllProjects/AllProjects.jsx';
 
 function App() {
 
@@ -10,6 +11,10 @@ function App() {
     {
       path: "/",
       element: <Home />
+    },
+    {
+      path: "/all-projects",
+      element: <AllProjects/>
     }
   ])
 

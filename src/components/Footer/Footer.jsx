@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     // <div className='h-screen justify-center flex flex-col'>
-    <div className=' h-[70vh] flex flex-col justify-between py-4 '>
+    <div id='contact' className=' h-[70vh] flex flex-col justify-between py-4 '>
 
       <div className='flex flex-col justify-center items-center space-y-8 font-rale'>
         <h1 className='md:text-8xl text-5xl font-oswald text-center leading-snug tracking-tighter'>INTERESTED IN <br /> WORKING TOGETHER <span className='inline-block animate-bounce'>?</span></h1>

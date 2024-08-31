@@ -1,6 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
+
+  function smoothScrollTo(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <>
 
@@ -63,9 +72,23 @@ const Navbar = () => {
 
       <header>
         <nav className='p-10 flex  justify-between'>
-          <a className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none "  >
+          <Link to='/' className="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none "  >
             <h1>Om <span className='opacity-60'>M Nandurkar</span> </h1>
-          </a>
+          </Link>
+
+          <div className='hidden md:block'>
+            <ul className='flex -ms-32 gap-5'>
+              <li>
+                <Link onClick={() => smoothScrollTo('about')} className='font-oswald ' >About</Link>
+              </li>
+              <li>
+                <Link onClick={() => smoothScrollTo('contact')} className='font-oswald ' >Contact</Link>
+              </li>
+              <li>
+                <Link to='/all-projects' className='font-oswald ' >All Projects</Link>
+              </li>
+            </ul>
+          </div>
 
 
 
