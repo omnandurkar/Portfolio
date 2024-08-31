@@ -84,7 +84,7 @@ const projectData = [
         title: 'Doraemon Gadget Store',
         description: 'An e-commerce store inspired by Doraemon, offering futuristic gadgets and accessories.',
         img: doraemon,
-        link: "https://one8sports.vercel.app/",
+        link: "https://doraemon-gadget-store.netlify.app/",
         type: "personal"
     },
     {
@@ -137,7 +137,7 @@ const AllProjects = () => {
     return (
         <div className='pb-20'>
 
-            <Navbar/>
+            <Navbar />
 
             <h2 className='text-center font-oswald text-5xl p-10'>Projects</h2>
 
