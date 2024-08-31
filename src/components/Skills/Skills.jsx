@@ -32,7 +32,7 @@ const Skills = () => {
                     scrub: 0.5
                 }
             });
-            tl.from('.card-container', { x: 200, duration: 1, opacity: 0, stagger: 0.5 });
+            tl.from('.card-container', { x: -200, duration: 1, opacity: 0, stagger: 0.5 }); // Changed x to -200 for mobile
         });
 
         // Cleanup ScrollTriggers on component unmount
