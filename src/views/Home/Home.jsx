@@ -29,9 +29,13 @@ const Home = () => {
 
   // }, [])
 
-  useEffect(()=>{
-    Aos.init({duration : 1000, delay : 300});
-})
+  useEffect(() => {
+    Aos.init({ duration: 1000, delay: 300 });
+  })
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [])
 
 
   return (
@@ -45,7 +49,7 @@ const Home = () => {
 
       <Profile />
 
- 
+
 
       <Skills />
 
@@ -53,7 +57,7 @@ const Home = () => {
 
       <Footer />
 
-      <DeviceDetector/>
+      <DeviceDetector />
 
 
     </>
