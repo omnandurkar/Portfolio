@@ -13,6 +13,7 @@ import recipe from '/recipe.png'
 import macbook from '/macbook.png'
 import chartjs from '/chartjs.png'
 import roadtocode from '/roadtocode.png'
+import framerNotes from '/framerNotes.png'
 
 
 const projectData = [
@@ -147,6 +148,17 @@ const projectData = [
 
     {
         id: 15,
+        title: "Frmer Notes",
+        description: "A NextJs based note taking app with Framer Motion ",
+        img: framerNotes,
+        link: "https://next-framer-notes.vercel.app/",
+        type: "personal",
+        stack: ['Next Js', 'React', 'Framer Motion', 'Server Actions', 'MongoDB', 'Tailwind CSS',]
+
+    },
+
+    {
+        id: 16,
         title: 'ChartJS Dashboard',
         description: 'A dynamic dashboard with interactive charts and graphs, powered by ChartJS for data visualization.',
         img: chartjs,
