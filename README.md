@@ -8,7 +8,7 @@ Welcome to my personal portfolio website! This is where I showcase my work, skil
 
 ## 🖥️ Live Demo
 
-Check out the live version here: [Live Portfolio](omnandurkar.me)
+Check out the live version here: [Live Portfolio](https://www.omnandurkar.me/)
 
 ## 📌 Features
 
