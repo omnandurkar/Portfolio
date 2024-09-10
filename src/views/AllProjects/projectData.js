@@ -40,7 +40,7 @@ const projectData = [
         title: 'Smart Dustbin',
         description: 'A smart dustbin application designed for efficient waste management and environmental sustainability.',
         img: img6,
-        link: "https://clever-books-omega.vercel.app/",
+        link: "https://dustbin-ruddy.vercel.app/",
         type: "client",
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', 'AOS']
     },
@@ -162,7 +162,7 @@ const projectData = [
         title: 'ChartJS Dashboard',
         description: 'A dynamic dashboard with interactive charts and graphs, powered by ChartJS for data visualization.',
         img: chartjs,
-        LINK: "https://dashboard-two-iota-97.vercel.app/",
+        link: "https://dashboard-two-iota-97.vercel.app/",
         type: "personal",
         stack: ['React', 'ChartJS', 'Tailwind CSS', 'JavaScript']
 
