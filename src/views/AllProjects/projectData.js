@@ -14,11 +14,13 @@ import macbook from '/macbook.png'
 import chartjs from '/chartjs.png'
 import roadtocode from '/roadtocode.png'
 import framerNotes from '/framerNotes.png'
+import authnotes from '/auth-framer-notes.png'
+import xora from '/XORA.jpg'
 
 
 const projectData = [
     {
-        id: 1,
+        id: 10,
         title: 'AI Interview',
         description: 'A platform for conducting AI-powered mock interviews to help users prepare for job applications.',
         img: img5,
@@ -27,7 +29,7 @@ const projectData = [
         stack: ['Next Js', 'React', 'Node', 'API', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
     },
     {
-        id: 2,
+        id: 20,
         title: 'Nutribites',
         description: 'A comprehensive online store offering personalized nutrition products tailored to individual needs.',
         img: nutribites,
@@ -36,7 +38,7 @@ const projectData = [
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', "AOS", 'RazorPay']
     },
     {
-        id: 3,
+        id: 30,
         title: 'Smart Dustbin',
         description: 'A smart dustbin application designed for efficient waste management and environmental sustainability.',
         img: img6,
@@ -45,7 +47,7 @@ const projectData = [
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', 'AOS']
     },
     {
-        id: 4,
+        id: 40,
         title: 'Easy Tickets',
         description: 'A convenient ticket booking system that simplifies event reservations and management.',
         img: img2,
@@ -54,7 +56,26 @@ const projectData = [
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase']
     },
     {
-        id: 5,
+        id: 42,
+        title: 'XORA - Saas Landing Page',
+        description: 'A modern landing page for a SaaS product, showcasing features, pricing, and user testimonials.',
+        img: xora,
+        link: "https://xora-seven.vercel.app/",
+        type: "personal",
+        stack: ['React', 'Tailwind CSS', 'Framer Motion', 'JSX']
+
+    },
+    {
+        id: 45,
+        title: 'LinkShift Notes',
+        description: 'A note-taking application that allows different users to create, edit, and delete notes with ease.',
+        img: authnotes,
+        link: "https://auth-framer-notes.vercel.app/",
+        type: "personal",
+        stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions', "Framer Motion"]
+    },
+    {
+        id: 50,
         title: 'One8sports',
         description: 'A dynamic sports academy website that offers training programs and sports merchandise.',
         img: one8sports,
@@ -63,7 +84,7 @@ const projectData = [
         stack: ['Next Js', 'React', "Acernity UI", 'AOS']
     },
     {
-        id: 6,
+        id: 60,
         title: 'One8sports2.0',
         description: 'An enhanced version of One8sports with improved features and user experience.',
         img: one8sports,
@@ -72,7 +93,7 @@ const projectData = [
         stack: ['Next Js', 'React', "Acernity UI", 'AOS']
     },
     {
-        id: 7,
+        id: 70,
         title: 'Clever Books',
         description: 'A personalized book recommendation system that curates reading lists based on user preferences.',
         img: cleverbooks,
@@ -81,7 +102,7 @@ const projectData = [
         stack: ['React', 'Tailwind CSS', 'AOS']
     },
     {
-        id: 8,
+        id: 80,
         title: 'Coffee Shop',
         description: 'An interactive coffee shop website offering a virtual café experience with menu and online ordering.',
         img: img4,
@@ -90,7 +111,7 @@ const projectData = [
         stack: ['UI/UX', 'React', 'Bootstrap', 'KeyFrames']
     },
     {
-        id: 9,
+        id: 90,
         title: 'Doraemon Gadget Store',
         description: 'An e-commerce store inspired by Doraemon, offering futuristic gadgets and accessories.',
         img: doraemon,
@@ -99,7 +120,7 @@ const projectData = [
         stack: ['UI/UX', 'HTML', 'Bootstrap', 'JavaScript', 'KeyFrames']
     },
     {
-        id: 10,
+        id: 100,
         title: 'FoodoBar',
         description: 'A responsive web app providing restaurant-style food ordering with a curated menu.',
         img: img3,
@@ -108,7 +129,7 @@ const projectData = [
         stack: ['UI/UX', 'HTML', 'CSS', 'JavaScript', 'KeyFrames']
     },
     {
-        id: 11,
+        id: 110,
         title: 'Party Planners',
         description: 'A platform to simplify event planning and coordination, offering customizable party packages.',
         img: img1,
@@ -117,7 +138,7 @@ const projectData = [
         stack: ['UI/UX', 'HTML', 'CSS']
     },
     {
-        id: 12,
+        id: 120,
         title: 'User Management CRUD App',
         description: 'A user-friendly application for managing users with Create, Read, Update, and Delete functionalities.',
         img: userManagement,
@@ -126,7 +147,7 @@ const projectData = [
         stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions']
     },
     {
-        id: 13,
+        id: 130,
         title: 'Recipe API App',
         description: 'A recipe app that provides a vast collection of recipes, powered by a robust API for food enthusiasts.',
         img: recipe,
@@ -136,7 +157,7 @@ const projectData = [
     },
 
     {
-        id: 14,
+        id: 140,
         title: 'MacBook Three JS',
         description: 'A 3D model of a MacBook created using React Three Fiber, demonstrating interactive 3D graphics and animation.',
         img: macbook,
@@ -147,7 +168,7 @@ const projectData = [
     },
 
     {
-        id: 15,
+        id: 150,
         title: "Frmer Notes",
         description: "A NextJs based note taking app with Framer Motion ",
         img: framerNotes,
@@ -157,8 +178,9 @@ const projectData = [
 
     },
 
+
     {
-        id: 16,
+        id: 160,
         title: 'ChartJS Dashboard',
         description: 'A dynamic dashboard with interactive charts and graphs, powered by ChartJS for data visualization.',
         img: chartjs,
@@ -169,7 +191,7 @@ const projectData = [
     },
 
     {
-        id: 17,
+        id: 170,
         title: 'Road To Code', // website that showcases development cources
         description: 'A platform that offers a variety of coding courses and resources for aspiring developers.',
         img: roadtocode,
