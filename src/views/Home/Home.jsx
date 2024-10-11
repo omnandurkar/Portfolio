@@ -8,6 +8,7 @@ import Footer from '../../components/Footer/Footer'
 import DeviceDetector from '../DeviceDetector/DeviceDetector'
 import Aos from 'aos';
 import 'aos/dist/aos.css'
+import Experience from '../../components/Experience/Experience'
 
 const Home = () => {
 
@@ -45,13 +46,11 @@ const Home = () => {
 
       <MarqueeSec />
 
-
-
       <Profile />
 
-
-
       <Skills />
+
+      <Experience />
 
       <Work />
 

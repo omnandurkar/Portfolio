@@ -70,7 +70,7 @@ const projectData = [
         title: 'LinkShift Notes',
         description: 'A note-taking application that allows different users to create, edit, and delete notes with ease.',
         img: authnotes,
-        link: "https://auth-framer-notes.vercel.app/",
+        link: "https://notes.omnandurkar.me/",
         type: "personal",
         stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions', "Framer Motion"]
     },

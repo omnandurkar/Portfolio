@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Home from './views/Home/Home.jsx'
 import AllProjects from './views/AllProjects/AllProjects.jsx';
+import Exp from './components/Experience/Exp.jsx';
 
 function App() {
 
@@ -14,7 +15,11 @@ function App() {
     },
     {
       path: "/all-projects",
-      element: <AllProjects/>
+      element: <AllProjects />
+    },
+    {
+      path: "experience",
+      element: <Exp />
     }
   ])
 
