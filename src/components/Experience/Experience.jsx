@@ -73,14 +73,14 @@ const Experience = () => {
                             {experiences1.map((exp, index) => (
                                 <div className="relative" key={index}>
                                     <div className="dot"></div>
-                                    <div className="pl-10">
+                                    <div className="pl-10 md:w-11/12">
                                         <span className='timeline-date'>{exp.date}</span>
                                         <h3 className='timeline-title'>{exp.role}</h3>
                                         {
                                             exp.description2 ?
                                                 (
-                                                    <ul className=' text-gray-400 max-lg:text-justify space-y-5 font-rale'>
-                                                        <li>{exp.description}</li>
+                                                    <ul className=' text-gray-400 max-lg:text-justify space-y-5 font-rale '>
+                                                        <li  >{exp.description}</li>
                                                         <li>{exp.description2}</li>
                                                         <li>{exp.description3}</li>
                                                     </ul>
@@ -104,7 +104,7 @@ const Experience = () => {
                             {experiences2.map((exp, index) => (
                                 <div className="relative" key={index}>
                                     <div className="dot"></div>
-                                    <div className="pl-10">
+                                    <div className="pl-10 md:w-11/12">
                                         <span className='timeline-date'>{exp.date}</span>
                                         <h3 className='timeline-title'>{exp.role} </h3>
                                         <p className='text-gray-400 font-rale max-lg:text-justify'>{exp.description}</p>
