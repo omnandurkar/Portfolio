@@ -59,7 +59,7 @@ const ProjectTimeline = () => {
 
             <div className="grid grid-cols-1 mt-2 min-h-screen md:grid-cols-6  w-full py-5 md:max-w-[1120px] space-y-6 md:space-y-0 mx-auto mb-36">
                 <div className='col-span-1 md:col-span-6 flex justify-center mt-5 mb-10'>
-                    <h1 className='text-3xl md:text-5xl tracking-tighter font-oswald'>Projects Timeline</h1>
+                    <h1 className='text-5xl md:text-5xl tracking-tighter font-oswald'>Projects Timeline</h1>
                 </div>
                 <div className='col-span-4 ps-16 font-oswald max-lg:w-11/12 max-lg:px-5'>
                     <div className='flex flex-col items-center justify-center mb-20 space-y-6 md:space-y-0'>

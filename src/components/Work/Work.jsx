@@ -152,7 +152,7 @@ const Work = () => {
 
             <Link to='/all-projects'>
                 <div className='flex justify-center items-center'>
-                    <h2 className='text-center my-20 p-2 border bg-slate-100 font-semibold hover:opacity-100 opacity-75 transition-all active:scale-90 font-oswald text-slate-900 rounded-lg ' >Explore More Projects </h2>
+                    <h2 className='text-center my-20 p-2 border  font-semibold hover:opacity-100 opacity-75 transition-all active:scale-90 font-oswald text-slate-50 rounded-lg ' >Explore More Projects </h2>
                 </div>
 
             </Link>

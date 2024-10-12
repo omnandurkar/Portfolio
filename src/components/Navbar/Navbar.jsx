@@ -9,6 +9,8 @@ const Navbar = () => {
 
   const isRootRouteProjects = location.pathname === '/all-projects';
 
+  const isRootRouteTimeline = location.pathname === '/timeline';
+
 
   function smoothScrollTo(sectionId) {
     const section = document.getElementById(sectionId);
@@ -28,7 +30,7 @@ const Navbar = () => {
           </Link>
 
           {isRootRouteHome && (
-            <div className='hidden mt-2 md:block'>
+            <div className='hidden mt-2 md:block md:ps-12 '>
               <ul className='flex -ms-32 gap-5'>
                 <li>
                   <Link onClick={() => smoothScrollTo('about')} className='font-oswald ' >About</Link>
@@ -49,11 +51,11 @@ const Navbar = () => {
 
 
 
-          <div className='flex space-x-5'>
+          <div className='flex max-lg:flex-col-reverse  md:space-x-5'>
 
             {
               isRootRouteProjects && (
-                <div className='p-2 text-slate-100 mt-2 opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
+                <div className='p-2 text-slate-100 max-lg:my-4  opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
                   <Link to='/timeline'>
                     Timeline
                   </Link>
@@ -62,8 +64,8 @@ const Navbar = () => {
             }
 
             {
-              !isRootRouteProjects && (
-                <div className='p-2 text-slate-100 mt-2 opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
+              isRootRouteTimeline && (
+                <div className='p-2 text-slate-100 max-lg:my-4  opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
                   <Link to='/all-projects'>
                     Projects
                   </Link>
@@ -72,7 +74,7 @@ const Navbar = () => {
             }
 
             <a href='https://drive.google.com/file/d/13c049p0rHmRTWH_BSrOAUta5o70aKYQS/view?usp=sharing' target='_black'>
-              <h2 className='p-2 bg-slate-100 mt-2 opacity-75 hover:opacity-100 text-xs uppercase  text-black font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
+              <h2 className='p-2 bg-slate-100 flex justify-center items-center  opacity-75 hover:opacity-100 text-xs uppercase  text-black font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
                 Resume
               </h2>
             </a>

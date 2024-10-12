@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 // Timeline data
 const experiences1 = [
@@ -140,6 +141,15 @@ const Experience = () => {
                     </section>
                 </div>
             </div >
+
+            {/* <div className='col-span-6 flex justify-center items-center mb-10'>
+                <div className='p-2 text-slate-100 max-lg:my-4   opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
+                    <Link to='/timeline'>
+                        Explore Complete Timeline
+                    </Link>
+                </div>
+            </div> */}
+
         </div >
     );
 };
