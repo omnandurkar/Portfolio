@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '../../components/Navbar/Navbar';
 import projectData from './projectData';
+import { Link } from 'react-router-dom';
+import Footer from '../../components/Footer/Footer';
 
 const AllProjects = () => {
     const [filter, setFilter] = useState('all');
@@ -93,6 +95,17 @@ const AllProjects = () => {
                     </motion.a>
                 ))}
             </motion.div>
+
+            <div className='w-full flex justify-center mb-40'>
+                <div className='p-2 text-slate-100 mt-2 opacity-75 hover:opacity-100 text-xs uppercase font-bold mx-auto  font-rale active:scale-90 cursor-pointer  rounded-md border'>
+                    <Link to='/timeline'>
+                        Check Timeline
+                    </Link>
+                </div>
+            </div>
+
+            <Footer />
+
         </div>
     );
 };

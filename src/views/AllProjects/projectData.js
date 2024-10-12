@@ -144,7 +144,7 @@ const projectData = [
         img: userManagement,
         link: "https://next-auth-alpha-rose.vercel.app/",
         type: "personal",
-        stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions']
+        stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions', 'Magic UI']
     },
     {
         id: 130,

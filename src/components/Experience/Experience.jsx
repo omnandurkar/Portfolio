@@ -14,7 +14,8 @@ const experiences1 = [
     },
     {
         role: "Continuous learning",
-        description: "Gained hands-on experience through ongoing training programs, staying updated with the latest industry practices and technologies."
+        description: "Gained hands-on experience through ongoing training programs, staying updated with the latest industry practices and technologies.",
+        currentrole: true
     },
 
 ];
@@ -23,7 +24,9 @@ const experiences2 = [
         role: "Tech Assistance Intern",
         company: "Tech Company A",
         date: "Dec 2023 - Feb 2024",
-        description: "Transformative experience that has equipped me with valuable skills and insights in web development."
+        description: "Transformative experience that has equipped me with valuable skills and insights in web development.",
+        link: "https://interview-wizard.roadtocode.org/",
+        linkTitle: "Interview Wizard"
     },
     {
         role: "Teaching Assistance",
@@ -34,7 +37,8 @@ const experiences2 = [
         description: `Actively contributed to the open-source Spaceship project by providing valuable insights,
         documentation enhancements, and code contributions, enriching the learning experience for computer
         science students.`,
-        link: "https://spaceship.roadtocode.org"
+        link: "https://spaceship.roadtocode.org",
+        linkTitle: "Spaceship"
     }
 ];
 
@@ -55,7 +59,7 @@ const Experience = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 mt-2 min-h-screen md:grid-cols-6 border-t-2 w-full py-5 md:max-w-[1120px] space-y-6 md:space-y-0 mx-auto">
+        <div id='Experience' className="grid grid-cols-1 mt-2 min-h-screen md:grid-cols-6 border-t-2 w-full py-5 md:max-w-[1120px] space-y-6 md:space-y-0 mx-auto">
             <div className='col-span-1 md:col-span-4  flex justify-center md:justify-start'>
                 <h1 className='text-3xl md:text-5xl tracking-tighter font-oswald'>EXPERIENCE</h1>
             </div>
@@ -66,13 +70,25 @@ const Experience = () => {
                         <div className='sticky top-0 pb-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
                             <div className='flex items-center py-3 md:-translate-x-4'>
                                 <img src='https://lh3.googleusercontent.com/p/AF1QipOhQ9UlVMaznORos28Gn5prYVrsnbcYdxYu5ldw=s1360-w1360-h1020' alt='' className='w-14 h-14 border-4 border-black rounded-full bg-black' />
-                                <h2 className='group-date'>Stoic & Salamander Global Corporation</h2>
+                                <a href='https://stoicsalamander.com/' className='cursor-pointer' >
+                                    <h2 className='group-date'>Stoic & Salamander Global Corporation</h2>
+                                </a>
                             </div>
                         </div>
                         <div className="timeline">
                             {experiences1.map((exp, index) => (
                                 <div className="relative" key={index}>
-                                    <div className="dot"></div>
+                                    {
+                                        exp.currentrole ? (
+
+                                            <div className="dot ">
+                                                <div className="dot absolute -top-1 -left-1 animate-ping "></div>
+                                            </div>
+                                        ) : (
+
+                                            <div className="dot"></div>
+                                        )
+                                    }
                                     <div className="pl-10 md:w-11/12">
                                         <span className='timeline-date'>{exp.date}</span>
                                         <h3 className='timeline-title'>{exp.role}</h3>
@@ -85,7 +101,7 @@ const Experience = () => {
                                                         <li>{exp.description3}</li>
                                                     </ul>
                                                 ) : (
-                                                    <p className='text-gray-400 font-rale'>{exp.description}</p>
+                                                    <p className='text-gray-400 font-rale max-lg:text-justify'>{exp.description}</p>
                                                 )
                                         }
                                     </div>
@@ -97,7 +113,9 @@ const Experience = () => {
                         <div className='sticky top-0 py-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
                             <div className='flex items-center py-3 md:-translate-x-4'>
                                 <img src='https://www.roadtocode.org/_next/static/media/logo.c23aa56e.png' alt='' className='w-14 h-14  rounded-full bg-transparent' />
-                                <h2 className='group-date'>Road To Code</h2>
+                                <a href='https://www.roadtocode.org/' className='cursor-pointer' >
+                                    <h2 className='group-date'>Road To Code</h2>
+                                </a>
                             </div>
                         </div>
                         <div className="timeline">
@@ -111,7 +129,7 @@ const Experience = () => {
                                         {
                                             exp.link &&
                                             <a href={exp.link} target='_blank' className='flex items-center hover:underline underline-offset-2  text-gray-400 hover:text-gray-50 '>
-                                                <p className='' >Spaceship</p>  <ExternalLink className='h-3.5 mt-1' />
+                                                <p className='' >{exp.linkTitle}</p>  <ExternalLink className='h-3.5 mt-1' />
                                             </a>
                                         }
                                     </div>
