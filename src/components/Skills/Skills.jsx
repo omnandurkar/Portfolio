@@ -27,15 +27,15 @@ const Skills = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: "#card-boxx",
-                    start: "top 70%",
-                    end: "bottom 80%",
+                    start: "top 50%",
+                    end: "bottom 90%",
                     scrub: 0.5
                 }
             });
             tl.from('.card-container', { x: -200, duration: 1, opacity: 0, stagger: 0.5 });
         });
 
-        
+
         return () => mm.revert();
     }, []);
 
@@ -53,7 +53,7 @@ const Skills = () => {
                             </div>
                             <div className="flex flex-row space-x-4 items-center">
                                 {features.map((feature, index) => (
-                                    <h3 key={index} className="bg-[#1d1d1f] text-white px-5 py-[2px] text-xs rounded-full hover:rotate-12 duration-300 ease-in-out">{feature}</h3>
+                                    <h3 key={index} className="bg-[#1d1d1f] text-white px-5 py-[3px] text-xs rounded-full hover:rotate-12 duration-300 ease-in-out">{feature}</h3>
                                 ))}
                             </div>
                         </div>
@@ -76,21 +76,21 @@ const Skills = () => {
                     title="WEB DEVELOPMENT"
                     iconUrl="https://cdn-icons-png.flaticon.com/128/10285/10285722.png"
                     description="Web development encompasses more than just creating static visuals. It involves building dynamic and interactive websites and web applications that are functional, efficient, and user-friendly."
-                    features={["Fast", "Interactive", "Mobile Friendly"]}
+                    features={["NextJs", "ReactJs", "JavaScript"]}
                     data-aos="fade-right"
                 />
                 <Card
                     title="WEB DESIGN"
                     iconComponent={<Svg1 />}
                     description="Web design goes beyond static visuals. It's about interactions, animations, usability, consistency and so much more. I create user-focused designs for your website, ensuring a captivating online journey for your audience."
-                    features={["Modern", "Attractive", "Responsive"]}
+                    features={["Figma", "Canva", "Responsive"]}
                     data-aos="fade-right"
                 />
                 <Card
                     title="Backend Solutions"
                     iconUrl="https://cdn-icons-png.flaticon.com/128/2010/2010990.png"
                     description="Backend solutions encompass more than just server-side development. They involve creating robust, scalable, and efficient systems to power the functionality of websites and web applications."
-                    features={["API", "Database", "Authentication"]}
+                    features={["NodeJs", "ExpressJs", "API/ServerAction"]}
                     data-aos="fade-right"
                 />
             </div>
