@@ -27,12 +27,12 @@ const Skills = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: "#card-boxx",
-                    start: "top 50%",
+                    start: "top 10%",
                     end: "bottom 90%",
                     scrub: 0.5
                 }
             });
-            tl.from('.card-container', { x: -200, duration: 1, opacity: 0, stagger: 0.5 });
+            tl.from('.card-container', { x: -300, duration: 1, opacity: 0, stagger: 0.5 });
         });
 
 
