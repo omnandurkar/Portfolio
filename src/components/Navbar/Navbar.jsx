@@ -73,7 +73,7 @@ const Navbar = () => {
               )
             }
 
-            <a href='https://drive.google.com/file/d/13c049p0rHmRTWH_BSrOAUta5o70aKYQS/view?usp=sharing' target='_black'>
+            <a href='https://drive.google.com/file/d/1bh8vXwP7kQGtycHlwlQIneSkYD9XyNI5/view?usp=sharing' target='_black'>
               <h2 className='p-2 bg-slate-100 flex justify-center items-center  opacity-75 hover:opacity-100 text-xs uppercase  text-black font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
                 Resume
               </h2>
