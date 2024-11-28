@@ -8,6 +8,7 @@ import doraemon from '/doraemon.png'
 import cleverbooks from '/cleverbooks.png'
 import nutribites from '/Nutribites-mockup.png'
 import one8sports from './image.png'
+import one8sport from '/One8sport.png'
 import userManagement from '/user-management.png'
 import recipe from '/recipe.png'
 import macbook from '/macbook.png'
@@ -16,18 +17,30 @@ import roadtocode from '/roadtocode.png'
 import framerNotes from '/framerNotes.png'
 import authnotes from '/auth-framer-notes.png'
 import xora from '/XORA.jpg'
+import zentry from '/zentry.png'
 
 
 const projectData = [
     {
-        id: 10,
-        title: 'AI Interview',
-        description: 'A platform for conducting AI-powered mock interviews to help users prepare for job applications.',
-        img: img5,
-        link: "https://ai-moker.vercel.app/",
+        id: 5,
+        title: 'Zentry UI',
+        description: 'Build a visually captivating website inspired by Zentry, featuring scroll-triggered animations, geometric transitions, and engaging video storytelling.',
+        img: zentry,
+        link: "https://zentry-sage.vercel.app/",
         type: "personal",
-        stack: ['Next Js', 'React', 'Node', 'API', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
+        stack: ['React', 'Tailwind CSS', 'GSAP', 'AOS', 'ScrollTrigger', 'React Router', 'React Icons', 'React Scroll']
+
     },
+  
+    // {
+    //     id: 10,
+    //     title: 'AI Interview',
+    //     description: 'A platform for conducting AI-powered mock interviews to help users prepare for job applications.',
+    //     img: img5,
+    //     link: "https://ai-moker.vercel.app/",
+    //     type: "personal",
+    //     stack: ['Next Js', 'React', 'Node', 'API', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
+    // },
     {
         id: 20,
         title: 'Nutribites',
@@ -35,7 +48,9 @@ const projectData = [
         img: nutribites,
         link: "https://www.nutribites.store/",
         type: "client",
-        stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', "AOS", 'RazorPay']
+        stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', "AOS", 'RazorPay'],
+        domain: "www.nutribites.store"
+
     },
     {
         id: 30,
@@ -78,14 +93,15 @@ const projectData = [
         id: 50,
         title: 'One8sports',
         description: 'A dynamic sports academy website that offers training programs and sports merchandise.',
-        img: one8sports,
+        img: one8sport,
         link: "https://one8sports2.vercel.app/",
         type: "client",
-        stack: ['Next Js', 'React', "Acernity UI", 'AOS']
+        stack: ['Next Js', 'React', "Acernity UI", 'AOS'],
+        domain: "www.one8sports.com"
     },
     {
         id: 60,
-        title: 'One8sports2.0',
+        title: 'One8sports (Spare)',
         description: 'An enhanced version of One8sports with improved features and user experience.',
         img: one8sports,
         link: "https://one8sports.vercel.app/",

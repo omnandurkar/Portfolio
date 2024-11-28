@@ -80,7 +80,14 @@ const AllProjects = () => {
                             />
                         </div>
                         <div className='flex flex-col p-4 space-y-1'>
-                            <h3 className='text-xl font-oswald'>{project.title}</h3>
+                            <div className='flex justify-between'>
+                                <h3 className='text-xl font-oswald'>{project.title}</h3>
+                                {project.domain && (
+                                    <div className='text-xs text-white font-rale py-2 hover:underline underline-offset-2'>
+                                        {project.domain}
+                                    </div>
+                                )}
+                            </div>
                             <p className='text-xs font-rale'>{project.description}</p>
                             {project.stack && (
                                 <div className='flex flex-wrap gap-2 pt-2'>
@@ -91,6 +98,7 @@ const AllProjects = () => {
                                     ))}
                                 </div>
                             )}
+
                         </div>
                     </motion.a>
                 ))}

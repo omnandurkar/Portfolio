@@ -5,13 +5,13 @@ const Profile = () => {
     return (
         <div id='about' className='space-y-10 p-4 md:p-10'>
 
-            <div className='flex flex-col md:flex-row justify-center space-x-0 md:space-x-8 space-y-8 md:space-y-0'>
-                <div className='bg-white text-black p-8 md:p-10 w-full md:w-[550px] rounded-2xl'>
+            <div className='flex flex-col md:flex-row justify-center space-x-0 md:space-x-8 space-y-8 md:space-y-0'  >
+                <div className='bg-white text-black p-8 md:p-10 w-full md:w-[550px] rounded-2xl' data-aos="fade-up">
                     <h1 className='font-rale text-xl md:text-3xl tracking-wider'>
                         As a passionate and dedicated MERN Stack Developer, I specialize in crafting responsive, user-friendly web applications using cutting-edge technologies. <br /> <br /> Dive into my portfolio to see how I can transform your ideas into reality.
                     </h1>
                 </div>
-                <div className='flex justify-center md:justify-start'>
+                <div className='flex justify-center md:justify-start' data-aos="fade-up">
                     <img src={om} className='w-full h-auto md:h-screen rounded-2xl' alt="Om Nandurkar" />
                 </div>
             </div>

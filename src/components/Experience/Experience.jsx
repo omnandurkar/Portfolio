@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom';
 // Timeline data
 const experiences1 = [
     {
-        role: "Software Developer Intern",
+        role: "Software Developer Apprentice",
         company: "Road To Code",
-        date: "Aug 2024 - Present",
+        date: "July 2024 - Nov 2024",
         description: "Spearheaded the development of internal applications like Stoic Notes, Stoic Expense, Invoice, and Payslip, streamlining operations for better efficiency and record management.",
         description2: "Worked on frontend projects, ensuring seamless and responsive user interfaces that enhance the user experience.",
         description3: "Actively involved in mentoring new hires and junior software developers, conducting knowledge transfer sessions, and helping them onboard efficiently.",

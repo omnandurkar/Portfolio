@@ -19,10 +19,6 @@ function App() {
       path: "/all-projects",
       element: <AllProjects />
     },
-    // {
-    //   path: "experience",
-    //   element: <Exp />
-    // },
     {
       path: "/timeline",
       element: <ProjectTimeline />
