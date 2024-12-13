@@ -18,9 +18,22 @@ import framerNotes from '/framerNotes.png'
 import authnotes from '/auth-framer-notes.png'
 import xora from '/XORA.jpg'
 import zentry from '/zentry.png'
+import tracer from '/tracer.png'
 
 
 const projectData = [
+    {
+        id: 4,
+        title: 'Tracer',
+        description: 'Tracer is a modern, secure, and feature-rich digital journaling application built with cutting-edge technologies. It provides users with a seamless experience to capture thoughts, track moods, and analyze their emotional journey.',
+        img: tracer,
+        link: "https://tracer-ai.vercel.app/",
+        type: "personal",
+        stack: ['Next Js', 'React', 'Tailwind CSS', 'Shadcn UI', 'Zod', 'Clerk', 'Prisma', 'NeonDB', 'Arcjet', 'Server Actions', 'Framer Motion']
+
+
+
+    },
     {
         id: 5,
         title: 'Zentry UI',
@@ -31,7 +44,7 @@ const projectData = [
         stack: ['React', 'Tailwind CSS', 'GSAP', 'AOS', 'ScrollTrigger', 'React Router', 'React Icons', 'React Scroll']
 
     },
-  
+
     // {
     //     id: 10,
     //     title: 'AI Interview',
@@ -94,7 +107,7 @@ const projectData = [
         title: 'One8sports',
         description: 'A dynamic sports academy website that offers training programs and sports merchandise.',
         img: one8sport,
-        link: "https://one8sports2.vercel.app/",
+        link: "https://one8sport.in/",
         type: "client",
         stack: ['Next Js', 'React', "Acernity UI", 'AOS'],
         domain: "www.one8sports.com"
