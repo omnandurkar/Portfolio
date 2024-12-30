@@ -10,6 +10,8 @@ const AllProjects = () => {
 
     const filteredProjects = projectData.filter((project) => {
         if (filter === 'all') return true;
+        if (filter === 'frontend') return project.frontend === true;
+        if (filter === 'backend') return project.frontend === false;
         return project.type === filter;
     });
 
@@ -30,27 +32,39 @@ const AllProjects = () => {
                 <motion.button
                     className={`px-4 py-2 mx-2 mb-4 sm:mb-0 rounded transition-colors duration-500 ${filter === 'all' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
                     onClick={() => setFilter('all')}
-                    // whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                 >
                     All Projects
                 </motion.button>
                 <motion.button
-                    className={`px-4 py-2 mx-2 mb-4 sm:mb-0 rounded transition-colors duration-500 ${filter === 'personal' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
-                    onClick={() => setFilter('personal')}
-                    // whileHover={{ scale: 1.05 }}
+                    className={`px-4 py-2 mx-2 rounded transition-colors duration-500 ${filter === 'frontend' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
+                    onClick={() => setFilter('frontend')}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Personal Projects
+                    Frontend
                 </motion.button>
                 <motion.button
-                    className={`px-4 py-2 mx-2 rounded transition-colors duration-500 ${filter === 'client' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
-                    onClick={() => setFilter('client')}
-                    // whileHover={{ scale: 1.05 }}
+                    className={`px-4 py-2 mx-2 rounded transition-colors duration-500 ${filter === 'backend' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
+                    onClick={() => setFilter('backend')}
                     whileTap={{ scale: 0.95 }}
                 >
-                    Client Projects
+                    Full Stack
                 </motion.button>
+                <motion.button
+                    className={`px-4 py-2 mx-2 mb-4 sm:mb-0 rounded transition-colors duration-500 ${filter === 'personal' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
+                    onClick={() => setFilter('personal')}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    Personal
+                </motion.button>
+                <motion.button
+                    className={`px-4 py-2 mx-2 rounded  transition-colors duration-500 ${filter === 'client' ? 'bg-neutral-300 text-black' : 'bg-neutral-700 text-white'}`}
+                    onClick={() => setFilter('client')}
+                    whileTap={{ scale: 0.95 }}
+                >
+                    Client
+                </motion.button>
+
             </div>
 
             <motion.div
@@ -65,10 +79,23 @@ const AllProjects = () => {
                         target="_blank"
                         key={project.id}
                         title={project.link}
-                        // whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
-                        className='bg-[#333333] text-slate-100 shadow-lg hover:shadow-neutral-800 rounded-lg'
+                        className='bg-[#333333] relative text-slate-100 shadow-lg hover:shadow-neutral-800 rounded-lg'
                     >
+                        <div className='absolute right-2 top-2 z-10'>
+                            {
+                                project.frontend ? (
+                                    <h2 className='text-xs bg-neutral-700 text-white px-2 py-1 rounded-md'>
+                                        Frontend
+                                    </h2>
+                                ) : (
+                                    <h2 className='text-xs bg-neutral-700 text-white px-2 py-1 rounded-md'>
+                                        Full Stack
+                                    </h2>
+                                )
+                            }
+                        </div>
+
                         <div className='w-full h-52 overflow-hidden rounded-t-md'>
                             <motion.img
                                 className='rounded-md w-full hover:scale-105 transition-all'
@@ -78,10 +105,12 @@ const AllProjects = () => {
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1 }}
                             />
+
                         </div>
                         <div className='flex flex-col p-4 space-y-1'>
                             <div className='flex justify-between'>
                                 <h3 className='text-xl font-oswald'>{project.title}</h3>
+
                                 {project.domain && (
                                     <div className='text-xs text-white font-rale py-2 hover:underline underline-offset-2'>
                                         {project.domain}
@@ -98,14 +127,13 @@ const AllProjects = () => {
                                     ))}
                                 </div>
                             )}
-
                         </div>
                     </motion.a>
                 ))}
             </motion.div>
 
             <div className='w-full flex justify-center mb-40'>
-                <div className='p-2 text-slate-100 mt-2 opacity-75 hover:opacity-100 text-xs uppercase font-bold mx-auto  font-rale active:scale-90 cursor-pointer  rounded-md border'>
+                <div className='p-2 text-slate-100 mt-2 opacity-75 hover:opacity-100 text-xs uppercase font-bold mx-auto font-rale active:scale-90 cursor-pointer rounded-md border'>
                     <Link to='/timeline'>
                         Check Timeline
                     </Link>
@@ -113,7 +141,6 @@ const AllProjects = () => {
             </div>
 
             <Footer />
-
         </div>
     );
 };

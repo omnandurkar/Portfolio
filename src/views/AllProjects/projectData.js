@@ -19,9 +19,32 @@ import authnotes from '/auth-framer-notes.png'
 import xora from '/XORA.jpg'
 import zentry from '/zentry.png'
 import tracer from '/tracer.png'
+import spizz from '/spizz.png'
+import cyberficaton from '/cyberfication.png'
 
 
 const projectData = [
+    {
+        id: 2,
+        title: 'Spizz',
+        description: 'Spizz is a visually captivating 3D landing page designed to showcase Spizz soda cans in an engaging and interactive way. This project leverages modern web technologies to deliver an immersive user experience.',
+        img: spizz,
+        link: "https://spizz.vercel.app/",
+        type: "personal",
+        frontend: true,
+        stack: ['NextJs', 'React', 'Three JS', 'React Three Fiber', 'Tailwind CSS', 'GSAP', 'Prismic CMS', 'Figma', 'Vercel']
+
+    },
+    {
+        id: 3,
+        title: 'Cyberfication',
+        description: 'Cyberfication is a modern and visually captivating website designed to showcase a fictional cybersecurity company.',
+        img: cyberficaton,
+        link: "https://cyberfiction-three.vercel.app/",
+        type: "personal",
+        frontend: true,
+        stack: ['Vannila Js', 'HTML', 'CSS', 'Canvas', 'GSAP', 'Figma', 'Vercel']
+    },
     {
         id: 4,
         title: 'Tracer',
@@ -29,6 +52,7 @@ const projectData = [
         img: tracer,
         link: "https://tracer-ai.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['Next Js', 'React', 'Tailwind CSS', 'Shadcn UI', 'Zod', 'Clerk', 'Prisma', 'NeonDB', 'Arcjet', 'Server Actions', 'Framer Motion']
 
 
@@ -41,19 +65,21 @@ const projectData = [
         img: zentry,
         link: "https://zentry-sage.vercel.app/",
         type: "personal",
+        frontend: true,
         stack: ['React', 'Tailwind CSS', 'GSAP', 'AOS', 'ScrollTrigger', 'React Router', 'React Icons', 'React Scroll']
 
     },
 
-    // {
-    //     id: 10,
-    //     title: 'AI Interview',
-    //     description: 'A platform for conducting AI-powered mock interviews to help users prepare for job applications.',
-    //     img: img5,
-    //     link: "https://ai-moker.vercel.app/",
-    //     type: "personal",
-    //     stack: ['Next Js', 'React', 'Node', 'API', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
-    // },
+    {
+        id: 10,
+        title: 'AI Interview',
+        description: 'A platform for conducting AI-powered mock interviews to help users prepare for job applications.',
+        img: img5,
+        link: "https://ai-moker.vercel.app/",
+        type: "personal",
+        frontend: false,
+        stack: ['Next Js', 'React', 'Node', 'API', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
+    },
     {
         id: 20,
         title: 'Nutribites',
@@ -61,6 +87,7 @@ const projectData = [
         img: nutribites,
         link: "https://www.nutribites.store/",
         type: "client",
+        frontend: false,
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', "AOS", 'RazorPay'],
         domain: "www.nutribites.store"
 
@@ -72,6 +99,7 @@ const projectData = [
         img: img6,
         link: "https://dustbin-ruddy.vercel.app/",
         type: "client",
+        frontend: false,
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase', 'AOS']
     },
     {
@@ -81,6 +109,7 @@ const projectData = [
         img: img2,
         link: "https://easytickets.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['React', 'Node', 'Express', 'MongoDB', 'Firebase']
     },
     {
@@ -90,6 +119,7 @@ const projectData = [
         img: xora,
         link: "https://xora-seven.vercel.app/",
         type: "personal",
+        frontend: true,
         stack: ['React', 'Tailwind CSS', 'Framer Motion', 'JSX']
 
     },
@@ -100,6 +130,7 @@ const projectData = [
         img: authnotes,
         link: "https://notes.omnandurkar.me/",
         type: "personal",
+        frontend: false,
         stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions', "Framer Motion"]
     },
     {
@@ -109,6 +140,7 @@ const projectData = [
         img: one8sport,
         link: "https://one8sport.in/",
         type: "client",
+        frontend: true,
         stack: ['Next Js', 'React', "Acernity UI", 'AOS'],
         domain: "www.one8sports.com"
     },
@@ -119,6 +151,7 @@ const projectData = [
         img: one8sports,
         link: "https://one8sports.vercel.app/",
         type: "client",
+        frontend: true,
         stack: ['Next Js', 'React', "Acernity UI", 'AOS']
     },
     {
@@ -128,6 +161,7 @@ const projectData = [
         img: cleverbooks,
         link: "https://clever-books-omega.vercel.app/",
         type: "personal",
+        frontend: true,
         stack: ['React', 'Tailwind CSS', 'AOS']
     },
     {
@@ -137,6 +171,7 @@ const projectData = [
         img: img4,
         link: "https://coffee-shop17.vercel.app/",
         type: "personal",
+        frontend: true,
         stack: ['UI/UX', 'React', 'Bootstrap', 'KeyFrames']
     },
     {
@@ -146,6 +181,7 @@ const projectData = [
         img: doraemon,
         link: "https://doraemon-gadget-store.netlify.app/",
         type: "personal",
+        frontend: true,
         stack: ['UI/UX', 'HTML', 'Bootstrap', 'JavaScript', 'KeyFrames']
     },
     {
@@ -155,6 +191,7 @@ const projectData = [
         img: img3,
         link: "https://foodobar.netlify.app/",
         type: "personal",
+        frontend: true,
         stack: ['UI/UX', 'HTML', 'CSS', 'JavaScript', 'KeyFrames']
     },
     {
@@ -164,6 +201,7 @@ const projectData = [
         img: img1,
         link: "https://party-planners.netlify.app/",
         type: "personal",
+        frontend: true,
         stack: ['UI/UX', 'HTML', 'CSS']
     },
     {
@@ -173,6 +211,7 @@ const projectData = [
         img: userManagement,
         link: "https://next-auth-alpha-rose.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['Next Js', 'React', 'Tailwind CSS', 'MongoDB', 'Server Actions', 'Magic UI']
     },
     {
@@ -182,6 +221,7 @@ const projectData = [
         img: recipe,
         link: "https://omrecipeapp.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['Next Js', 'React', 'Tailwind CSS', 'API', 'Server Actions']
     },
 
@@ -192,6 +232,7 @@ const projectData = [
         img: macbook,
         link: "https://mac-three-js.vercel.app/",
         type: "personal",
+        frontend: true,
         stack: ['React Three Fiber', 'Three JS', 'React', 'JavaScript', 'Tailwind CSS']
 
     },
@@ -203,6 +244,7 @@ const projectData = [
         img: framerNotes,
         link: "https://next-framer-notes.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['Next Js', 'React', 'Framer Motion', 'Server Actions', 'MongoDB', 'Tailwind CSS',]
 
     },
@@ -215,6 +257,7 @@ const projectData = [
         img: chartjs,
         link: "https://dashboard-two-iota-97.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['React', 'ChartJS', 'Tailwind CSS', 'JavaScript']
 
     },
@@ -226,6 +269,7 @@ const projectData = [
         img: roadtocode,
         link: "https://road-to-code.vercel.app/",
         type: "personal",
+        frontend: false,
         stack: ['React', 'Tailwind CSS', 'JavaScript', 'API', 'MongoDB', 'Node', 'Express', 'GSAP']
 
     }

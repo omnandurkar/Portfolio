@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
-import { Octomber2024, September2024, August2024, June2024, May2024, April2024, March2024, February2024, January2024, Y2023 } from './Timeline';
+import { November2024, Octomber2024, September2024, August2024, June2024, May2024, April2024, March2024, February2024, January2024, Y2023, December2024 } from './Timeline';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -22,32 +22,89 @@ const ProjectTimeline = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // const renderTimeline = (projects) => {
+    //     return projects.map((exp, index) => (
+    //         <div className="relative" key={index}>
+    //             <div className="dot"></div>
+    //             <a href={exp.link} target='_black'>
+    //                 <div className="pl-10 md:w-11/12">
+    //                     <span className='timeline-date'>{exp.date}</span>
+    //                     <h3 className='timeline-title'>{exp.project}</h3>
+    //                     <p className='text-gray-400 font-rale'>{exp.description}</p>
+    //                     {exp.Original && (
+    //                         <div className='flex space-x-5'>
+    //                             <a href={exp.Clone} target='_blank' rel="noreferrer" className='flex items-center hover:underline underline-offset-2 text-gray-400 hover:text-gray-50 '>
+    //                                 <p className=''>View Clone</p>
+    //                                 <ExternalLink className='h-3.5 mt-1' />
+    //                             </a>
+    //                             <a href={exp.Original} target='_blank' rel="noreferrer" className='flex items-center hover:underline underline-offset-2 text-gray-400 hover:text-gray-50 '>
+    //                                 <p className=''>View Original</p>
+    //                                 <ExternalLink className='h-3.5 mt-1' />
+    //                             </a>
+
+    //                         </div>
+    //                     )}
+
+
+    //                 </div>
+    //             </a>
+    //         </div>
+    //     ));
+    // };
+
     const renderTimeline = (projects) => {
+        const [hoveredProject, setHoveredProject] = useState(null);
+
         return projects.map((exp, index) => (
             <div className="relative" key={index}>
                 <div className="dot"></div>
-                <a href={exp.link} target='_black'>
+                <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    onMouseEnter={() => setHoveredProject(index)}
+                    onMouseLeave={() => setHoveredProject(null)}
+                >
                     <div className="pl-10 md:w-11/12">
                         <span className='timeline-date'>{exp.date}</span>
                         <h3 className='timeline-title'>{exp.project}</h3>
                         <p className='text-gray-400 font-rale'>{exp.description}</p>
                         {exp.Original && (
                             <div className='flex space-x-5'>
-                                <a href={exp.Clone} target='_blank' rel="noreferrer" className='flex items-center hover:underline underline-offset-2 text-gray-400 hover:text-gray-50 '>
-                                    <p className=''>View Clone</p>
-                                    <ExternalLink className='h-3.5 mt-1' />
+                                <a
+                                    href={exp.Clone}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className='flex items-center hover:underline underline-offset-2 text-gray-400 hover:text-gray-50'
+                                >
+                                    <p>View Clone</p>
                                 </a>
-                                <a href={exp.Original} target='_blank' rel="noreferrer" className='flex items-center hover:underline underline-offset-2 text-gray-400 hover:text-gray-50 '>
-                                    <p className=''>View Original</p>
-                                    <ExternalLink className='h-3.5 mt-1' />
+                                <a
+                                    href={exp.Original}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className='flex items-center hover:underline underline-offset-2 text-gray-400 hover:text-gray-50'
+                                >
+                                    <p>View Original</p>
                                 </a>
-
                             </div>
                         )}
-
-
                     </div>
                 </a>
+                {/* Conditionally render image on hover */}
+                {hoveredProject === index && (
+                    <div className="absolute left-0 top-0 transform translate-x-[-110%] w-40 h-40">
+                        {
+                            exp.img && (
+                                <img
+                                    src={exp.img}
+                                    alt={exp.project}
+                                    className="w-full h-full object-cover rounded-lg shadow-lg"
+                                />
+                            )
+                        }
+                    </div>
+                )}
             </div>
         ));
     };
@@ -63,6 +120,28 @@ const ProjectTimeline = () => {
                 </div>
                 <div className='col-span-4 ps-16 font-oswald max-lg:w-11/12 max-lg:px-5'>
                     <div className='flex flex-col items-center justify-center mb-20 space-y-6 md:space-y-0'>
+
+                        <section className="w-full md:w-[800px]">
+                            <div className='sticky top-0 pb-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
+                                <div className='flex items-center py-3 md:-translate-x-4'>
+                                    <h2 className='group-date uppercase'>Octomber 2024</h2>
+                                </div>
+                            </div>
+                            <div className="timeline">
+                                {renderTimeline(December2024)}
+                            </div>
+                        </section>
+
+                        <section className="w-full md:w-[800px]">
+                            <div className='sticky top-0 pb-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
+                                <div className='flex items-center py-3 md:-translate-x-4'>
+                                    <h2 className='group-date uppercase'>Octomber 2024</h2>
+                                </div>
+                            </div>
+                            <div className="timeline">
+                                {renderTimeline(November2024)}
+                            </div>
+                        </section>
 
                         <section className="w-full md:w-[800px]">
                             <div className='sticky top-0 pb-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
