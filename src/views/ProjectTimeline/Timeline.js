@@ -19,8 +19,14 @@ import authnotes from '/auth-framer-notes.png'
 import xora from '/XORA.jpg'
 import zentry from '/zentry.png'
 import tracer from '/tracer.png'
-import spizz from '/spizz.png'
+import spizz from '/spizz1.png'
 import cyberficaton from '/cyberfication.png'
+import stoicExpense from '/stoicExpense.png'
+import stoicInvoice from '/stoicInvoice.png'
+import stoicPayslip from '/stoicPaySlip.png'
+import ZStudio from '/ZStudio.png'
+import Otomation from '/Otomation.png'
+import portfolio from '/portfolio.png'
 
 
 const December2024 = [
@@ -29,12 +35,14 @@ const December2024 = [
         description: 'Spizz is a visually captivating 3D landing page designed to showcase Spizz soda cans in an engaging and interactive way. This project leverages modern web technologies to deliver an immersive user experience.',
         link: "https://spizz.vercel.app/",
         img: spizz,
+        techStack: ['NextJS', 'Three.js', 'React Three Fiber', 'GSAP']
     },
     {
         project: 'Cyberfication',
         description: 'Cyberfication is a modern and visually captivating website designed to showcase a fictional cybersecurity company.',
         link: "https://cyberfiction-three.vercel.app/",
         img: cyberficaton,
+        techStack: ['Vanilla JS', 'GSAP', 'Canvas']
     },
 
 ]
@@ -47,12 +55,14 @@ const November2024 = [
         Original: "https://zentry.com/",
         Clone: "https://zentry-sage.vercel.app/",
         img: zentry,
+        techStack: ['React JS', 'GSAP']
     },
     {
         project: "Tracer",
         description: 'Tracer is a modern, secure, and feature-rich digital journaling application built with cutting-edge technologies. It provides users with a seamless experience to capture thoughts, track moods, and analyze their emotional journey.',
         link: "https://tracer-ai.vercel.app/",
         img: tracer,
+        techStack: ['NextJS', 'Clerk', 'Framer Motion', 'Gemini']
     }
 ]
 
@@ -63,31 +73,40 @@ const Octomber2024 = [
         project: "Stoic Notes",
         description: "Developed a note-taking application that allows users to create, edit, and delete notes, ensuring a seamless note-taking experience.",
         // date: "Oct 2024 ",
-        link: "#"
-    },
-    {
-        project: "Stoic Expense",
-        description: "Built a budgeting application that enables users to track their expenses, set budgets, and manage their finances effectively.",
-        // date: "Oct 2024",
-        link: "#"
+        link: "#",
+        techStack: ['NextJS', 'Framer Motion', 'BcryptJs', 'CryptoJS']
+
     },
     {
         project: "Stoic Invoice",
         description: "Created an invoicing application that simplifies the process of generating and sending invoices to clients, ensuring timely payments.",
         // date: "Oct 2024",
-        link: "#"
+        link: "#",
+        techStack: ['NextJS', 'Framer Motion'],
+        img: stoicInvoice
+    },
+    {
+        project: "Stoic Expense",
+        description: "Built a budgeting application that enables users to track their expenses, set budgets, and manage their finances effectively.",
+        // date: "Oct 2024",
+        link: "#",
+        techStack: ['NextJS', 'Framer Motion'],
+        img: stoicExpense
     },
     {
         project: "Stoic Payslip",
         description: "Developed a payslip application that automates the process of generating payslips for employees, ensuring accurate and timely salary payments.",
         // date: "Oct 2024",
-        link: "#"
+        link: "#",
+        techStack: ['NextJS', 'Framer Motion'],
+        img: stoicPayslip
     },
     {
         project: "XORA | UI/UX Design",
         description: "Designed a UI/UX for a fictional SaaS website, showcasing my design skills and creativity.",
         link: "https://xora-seven.vercel.app/",
         img: xora,
+        techStack: ['Figma', 'React JS', 'Tailwind CSS']
     }
 ];
 
@@ -96,7 +115,8 @@ const September2024 = [
         project: "Stoic Plottings",
         description: "Developed a plotting application that allows users to create, edit, and delete plots, ensuring a seamless plotting experience.",
         date: "Sept 2024 - Nov 2024",
-        link: "#"
+        link: "#",
+        techStack: ['React Js', 'ExpressJs', 'NodeJs', 'Figma', 'Framer Motion']
     },
     {
         project: "Next Framer Notes",
@@ -104,6 +124,15 @@ const September2024 = [
         // date: "Dec 2023 - Feb 2024",
         link: "https://next-framer-notes.vercel.app",
         img: framerNotes,
+        techStack: ['NextJS', 'Framer Motion', 'BcryptJs', 'CryptoJS']
+    },
+    {
+        project: "LinkShift Notes",
+        description: "Developed a note-taking application that allows users to create, edit, and delete notes, ensuring a seamless note-taking experience with added Security.",
+        // date: "Dec 2023 - Feb 2024",
+        link: "https://notes.omnandurkar.me/",
+        img: authnotes,
+        techStack: ['NextJS', 'Framer Motion', 'BcryptJs', 'CryptoJS']
     },
     {
         project: "MacBook Pro Landing Page",
@@ -111,16 +140,20 @@ const September2024 = [
         // date: "Dec 2023 - Feb 2024",
         link: "https://mac-three-js.vercel.app/",
         img: macbook,
+        techStack: ['ReactJs', 'Three.js', 'React Three Fiber', 'GSAP']
     }
 ];
 
 const August2024 = [
     {
-        project: "Next Recipe",
+        project: "Om's Recipes",
         description: "Developed a note-taking application that allows users to create, edit, and delete notes, ensuring a seamless note-taking experience.",
         // date: "Aug 2024 - Aug 2024",
         link: "https://omrecipeapp.vercel.app/",
         img: recipe,
+        techStack: ['NextJS', 'APIs']
+
+
     },
     {
         project: "Next User Management",
@@ -128,6 +161,7 @@ const August2024 = [
         // date: "Aug 2024 - Aug 2024",
         link: "https://next-auth-alpha-rose.vercel.app/",
         img: userManagement,
+        techStack: ['NextJS', 'Acernity UI', 'Server Actions', 'Framer Motion']
     },
 
     {
@@ -135,7 +169,8 @@ const August2024 = [
         description: "Created an invoicing application that simplifies the process of generating and sending invoices to clients, ensuring timely payments.",
         date: "Aug 2024 - Sept 2024",
         link: "https://interview.omnandurkar.me/",
-        img: img5
+        img: img5,
+        techStack: ['NextJS', 'API', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
     },
 ]
 
@@ -145,6 +180,8 @@ const June2024 = [
         description: "Developed a Personal Portfolio that showcases my projects, skills, and experience, enabling me to connect with potential employers and collaborators.",
         date: "June 2024 - Present",
         link: "https://omnandurkar.me",
+        techStack: ['React JS', 'GSAP', 'Tailwind CSS'],
+        img: portfolio
 
     },
     {
@@ -152,14 +189,16 @@ const June2024 = [
         description: "Built a budgeting application that enables users to track their expenses, set budgets, and manage their finances effectively.",
         // date: "June 2024 - June 2024",
         link: "https://dashboard-two-iota-97.vercel.app/",
-        img: chartjs
+        img: chartjs,
+        techStack: ['React JS', 'Chart.js', 'Tailwind CSS']
     },
     {
         project: "Clever Books UI",
         description: "Created a UI design for a fictional bookstore website, showcasing my design skills and creativity.",
         // date: "June 2024 - June 2024",
         link: "https://clever-books-omega.vercel.app/",
-        img: cleverbooks
+        img: cleverbooks,
+        techStack: ['Figma', 'React JS', 'Tailwind CSS', 'AOS']
     }
 ]
 
@@ -169,14 +208,16 @@ const May2024 = [
         description: "Developed a Online Ticket Booking System that allows users to book tickets for movies, events, and travel, ensuring a seamless ticket booking experience.",
         // date: "May 2024 - May 2024",
         link: "https://easytickets.vercel.app/",
-        img: img2
+        img: img2,
+        techStack: ['React JS', 'ExpressJs', 'NodeJs', 'MongoDB']
 
     },
     {
         project: "GSAP Showcase",
         description: "Developed a GSAP animation showcase that demonstrates various animation effects and techniques using the GSAP library.",
         // date: "May 2024 - May 2024",
-        link: "https://gsap-t.vercel.app/"
+        link: "https://gsap-t.vercel.app/",
+        techStack: ['React JS', 'GSAP', 'ScrollTrigger', 'SVG manipulation', 'Tailwind CSS']
     }
 
 ]
@@ -187,7 +228,8 @@ const April2024 = [
         description: "Developed a online food ordering system that allows Gym rats to order healthy food, ensuring a seamless food ordering experience.",
         date: "April 2024 - Present",
         link: "https://www.nutribites.store/",
-        img: nutribites
+        img: nutribites,
+        techStack: ['React', 'ExpressJs', 'NodeJs', 'MongoDB', 'RazorPay', 'JWT', 'BcryptJs', 'Redux', 'Firebase']
     },
 
     {
@@ -195,7 +237,8 @@ const April2024 = [
         description: "Developed a smart dustbin website for BE Mechanical students for their final year project.",
         // date: "April 2024 - April 2024",
         link: "https://dustbin-ruddy.vercel.app/",
-        img: img6
+        img: img6,
+        techStack: ['React JS', 'ExpressJs', 'NodeJs', 'MongoDB', 'Firebase', 'AOS']
     }
 
 ]
@@ -208,7 +251,8 @@ const March2024 = [
         Original: "https://roadtocode.org",
         Clone: "https://road-to-code.vercel.app/",
         link: "https://road-to-code.vercel.app/",
-        img: roadtocode
+        img: roadtocode,
+        techStack: ['React JS', 'ExpressJs', 'Firebase', 'Tailwind CSS', 'AOS', 'Framer Motion', 'GSAP']
     },
 
 ]
@@ -219,7 +263,8 @@ const February2024 = [
         description: "Developed a UI design for a fictional coffee shop website, showcasing my design skills and creativity.",
         // date: "Feb 2024 - Feb 2024",
         link: "https://coffee-shop17.vercel.app/",
-        img: img4
+        img: img4,
+        techStack: ['Figma', 'React JS', 'Bootstrap', 'AOS']
     }
 
 ]
@@ -230,22 +275,27 @@ const January2024 = [
         description: "Developed a gadget store website that allows users to browse and purchase electronic gadgets, ensuring a seamless shopping experience.",
         // date: "Jan 2024 - Jan 2024",
         link: "https://doraemon-gadget-store.netlify.app/",
-        img: doraemon
+        img: doraemon,
+        techStack: ['Vaniila JS', 'HTML', 'CSS', 'Bootstrap']
     },
     {
         project: "Otomation",
         description: "Developed a home automation system that allows users to control their home appliances remotely, ensuring convenience and energy efficiency.",
         // date: "Jan 2024 - Jan 2024",
-        link: "https://luminous-pudding-48f605.netlify.app/"
+        link: "https://luminous-pudding-48f605.netlify.app/",
+        techStack: ['Vaniila JS', 'HTML', 'CSS', 'Bootstrap'],
+        img: Otomation
     }
 ]
 
 const Y2023 = [
     {
-        project: "Zee Studo Website",
+        project: "Zee Studio Website",
         description: "Developed a website for a fictional design studio, showcasing my design skills and creativity.",
         // date: "Dec 2023 - Dec 2023",
-        link: "https://omnandurkar.github.io/Zee-Studio/"
+        link: "https://omnandurkar.github.io/Zee-Studio/",
+        techStack: ['HTML', 'CSS'],
+        img: ZStudio
     },
 
     {
@@ -253,7 +303,8 @@ const Y2023 = [
         description: "Developed a party planning application that allows users to plan and organize events, ensuring a seamless party planning experience.",
         // date: "Dec 2023 - Dec 2023",
         link: "https://party-planners.netlify.app/",
-        img: img1
+        img: img1,
+        techStack: ['HTML', 'CSS']
     },
 
     {
@@ -261,7 +312,8 @@ const Y2023 = [
         description: "Developed a UI design for a fictional food delivery website, showcasing my design skills and creativity.",
         // date: "Dec 2023 - Dec 2023",
         link: "https://foodobar.netlify.app/",
-        img: img3
+        img: img3,
+        techStack: ['Figma', 'HTML', 'CSS']
     }
 ]
 
