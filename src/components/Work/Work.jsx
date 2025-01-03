@@ -4,6 +4,7 @@ import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import projectData from './projectData';
 import { Link } from 'react-router-dom';
+import SlidingProjects from './SlidingProjects';
 
 const Work = () => {
     useGSAP(() => {
@@ -150,12 +151,19 @@ const Work = () => {
                 ))}
             </div>
 
+            <div className='mt-10'>
+                <SlidingProjects />
+            </div>
+
             <Link to='/all-projects'>
                 <div className='flex justify-center items-center'>
-                    <h2 className='text-center my-20 p-2 border  font-semibold hover:opacity-100 opacity-75 transition-all active:scale-90 font-oswald text-slate-50 rounded-lg ' >Explore More Projects </h2>
+                    <h2 className='text-center my-20 p-2 border  font-semibold hover:opacity-100 opacity-75 transition-all active:scale-90 font-oswald text-slate-50 rounded-lg ' >Explore All Projects </h2>
                 </div>
 
             </Link>
+
+
+
         </div>
     );
 };
