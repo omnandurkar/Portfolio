@@ -55,21 +55,21 @@ const Navbar = () => {
 
             {
               isRootRouteProjects && (
-                <div className='p-2 text-slate-100 max-lg:my-4  opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
-                  <Link to='/timeline'>
+                <Link to='/timeline'>
+                  <div className='p-2 text-slate-100 max-lg:my-4  opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
                     Timeline
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               )
             }
 
             {
               isRootRouteTimeline && (
-                <div className='p-2 text-slate-100 max-lg:my-4  opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
-                  <Link to='/all-projects'>
+                <Link to='/all-projects'>
+                  <div className='p-2 text-slate-100 max-lg:my-4  opacity-75 hover:opacity-100 text-xs uppercase font-bold  font-rale active:scale-90 cursor-pointer  rounded-md border'>
                     Projects
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               )
             }
 

@@ -27,7 +27,20 @@ import stoicPayslip from '/stoicPaySlip.png'
 import ZStudio from '/ZStudio.png'
 import Otomation from '/Otomation.png'
 import portfolio from '/portfolio.png'
+import xpertImg from '/xpertImg.png'
 
+// March 2025
+
+const March2025 = [
+    {
+        project: 'Interview Xpert',
+        description: 'Interview Xpert is a comprehensive platform designed to assist users in preparing for interviews. It offers a range of features, including a question bank, interview tips, and a user-friendly interface to enhance the interview preparation experience.',
+        link: "https://interview-xpert.vercel.app/",
+        img: xpertImg,
+        techStack: ['Next Js', 'React', 'Node', 'API', 'Shadcn UI', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
+
+    },
+]
 
 const December2024 = [
     {
@@ -317,4 +330,4 @@ const Y2023 = [
     }
 ]
 
-export { December2024, November2024, Octomber2024, September2024, August2024, June2024, May2024, April2024, March2024, February2024, January2024, Y2023 };
+export { March2025, December2024, November2024, Octomber2024, September2024, August2024, June2024, May2024, April2024, March2024, February2024, January2024, Y2023 };

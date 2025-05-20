@@ -21,9 +21,20 @@ import zentry from '/zentry.png'
 import tracer from '/tracer.png'
 import spizz from '/spizz.png'
 import cyberficaton from '/cyberfication.png'
+import xpertImg from '/xpertImg.png'
 
 
 const projectData = [
+    {
+        id: 1,
+        title: 'Interview Xpert',
+        description: 'A platform for conducting AI-powered mock interviews to help users prepare for job applications.',
+        img: xpertImg,
+        link: "https://interview-xpert.vercel.app/",
+        type: "personal",
+        frontend: false,
+        stack: ['Next Js', 'React', 'Node', 'API', 'Shadcn UI', 'Magic UI', 'Drizzle ORM', 'Clerk', 'Google Gemini']
+    },
     {
         id: 2,
         title: 'Spizz',

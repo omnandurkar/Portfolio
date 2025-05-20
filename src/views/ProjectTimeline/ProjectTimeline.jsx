@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { gsap } from 'gsap';
-import { November2024, Octomber2024, September2024, August2024, June2024, May2024, April2024, March2024, February2024, January2024, Y2023, December2024 } from './Timeline';
+import { March2025, November2024, Octomber2024, September2024, August2024, June2024, May2024, April2024, March2024, February2024, January2024, Y2023, December2024 } from './Timeline';
 import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Navbar/Navbar';
 import { useGSAP } from '@gsap/react';
@@ -126,6 +126,17 @@ const ProjectTimeline = () => {
                     </div>
                     <div className="col-span-4 ps-16 font-oswald max-lg:w-11/12 max-lg:px-5">
                         <div className='flex flex-col items-center justify-center mb-20 space-y-6 md:space-y-0'>
+
+                            <section className="w-full md:w-[800px]">
+                                <div className='sticky top-0 pb-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
+                                    <div className='flex items-center py-3 md:-translate-x-4'>
+                                        <h2 className='group-date uppercase'>2025</h2>
+                                    </div>
+                                </div>
+                                <div className="timeline">
+                                    {renderTimeline(March2025)}
+                                </div>
+                            </section>
 
                             <section className="w-full md:w-[800px]">
                                 <div className='sticky top-0 pb-3 z-10 -translate-y-1 shadow-xl shadow-[#1d1d1f] bg-[#1d1d1f]'>
